@@ -1,8 +1,9 @@
-var CACHE_NAME = 'family-ledger-v2';
+var CACHE_NAME = 'family-ledger-v3';
 var urlsToCache = [
   './',
-  './index.html',
+  './家庭记账本.html',
   './manifest.json',
+  './icon-192.png',
   './icon-512.png',
   'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js',
   'https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js'
@@ -40,7 +41,7 @@ self.addEventListener('fetch', function(event) {
         return resp;
       }).catch(function() {
         if (event.request.destination === 'document') {
-          return caches.match('./index.html');
+          return caches.match('./家庭记账本.html');
         }
       });
     })
