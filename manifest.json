@@ -2,7 +2,7 @@
   "name": "家庭记账本",
   "short_name": "记账本",
   "description": "简洁好用的家庭记账应用",
-  "start_url": "./家庭记账本.html",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#F4F5F9",
   "theme_color": "#5B5FEF",
